@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif !important;
+}
+/* ant-d over Write */
+.ant-picker-input input {
+  border: none !important;
+}
+
+.secondary-button {
+  background-color: rgba(0, 0, 255, 0.404);
+  border-radius: 5px;
+  padding: 5px 15px !important;
+}
+input {
+  border-radius: 0.4rem !important;
+  border: 1px solid rgba(128, 128, 128, 0.39) !important;
+  height: 2.5rem !important;
+}
+
+input:focus,
+.ant-picker {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid gray !important;
+}
+
+label {
+  font-size: 1rem !important;
+  color: black !important;
+}
+
+.ant-form-item {
+  margin: 0.8rem 0 !important;
+}
+
+/* comman styling */
+.spinner-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.301);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.card-titles {
+  font-size: 29px;
+  font-weight: bold;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.normal-text {
+  font-size: 1rem;
+}
+
+.card {
+  box-shadow: 0 0 2px gray;
+}
+
+.primary-button {
+  background-color: rgba(255, 0, 0, 0.158) !important;
+  border-color: rgba(0, 255, 64, 0) !important;
+  color: black !important;
+  height: 2.5rem !important;
+  font-size: 1rem !important;
+  margin-top: 0.8rem !important;
+  width: 100% !important;
+}
+
+.primary-button:hover {
+  color: black !important;
+  background-color: red !important;
+  font-weight: 500 !important;
+}
+
+.anchor {
+  color: black !important;
+  text-decoration: underline !important;
+  font-size: 1rem !important;
+}
+
+.anchor:hover {
+  color: red !important;
+}
+
+.remix-icons {
+  font-size: 30px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+/* authentication pages */
+.authentication {
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+
+}
+
+.authentication-form {
+  width: 400px;
+}
+
+.authentication .card-title {
+  font-size: bold !important;
+  font-size: 1.5rem !important;
+  background-color: rgba(255, 0, 0, 0.411) !important;
+  max-width: max-content !important;
+  padding: 10px !important;
+  border-radius: 6px;
+  margin-left: 60px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .authentication .card-title {
+    margin-left: 40px !important;
+  }
+}
