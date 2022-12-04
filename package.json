@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Best doctor appointment app",
   "main": "server.js",
-  "engines": {
-    "node": "15.7.0",
-    "npm": "8.3.1"
-  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
