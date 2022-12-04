@@ -1,23 +1,28 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const http = require("http");
 const server = http.createServer(app);
 const cors = require("cors");
-require("dotenv").config();
-const dbConfig = require("./config/dbConfig");
+
 app.use(express.json());
-const userRoute = require("./routes/userRoute");
-const adminRoute = require("./routes/adminRoute");
-const doctorRoute = require("./routes/doctorsRoute");
+app.use(cors({ credentials: true, origin: "*" }));
+
+
+// const dbConfig = require("./config/dbConfig");
+// app.use(express.json());
+// const userRoute = require("./routes/userRoute");
+// const adminRoute = require("./routes/adminRoute");
+// const doctorRoute = require("./routes/doctorsRoute");
 // const path = require("path");
 
 app.get("/", (_, res) => {
   res.status(200).send("Online");
 });
 
-app.use("/api/user", userRoute);
-app.use("/api/admin", adminRoute);
-app.use("/api/doctor", doctorRoute);
+// app.use("/api/user", userRoute);
+// app.use("/api/admin", adminRoute);
+// app.use("/api/doctor", doctorRoute);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use("/", express.static("client/build"));
